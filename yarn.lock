@@ -101,7 +101,7 @@ ot-fuzzer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ot-fuzzer/-/ot-fuzzer-1.0.0.tgz#e444a8ebab43cdceb03578f5d571996449aeba06"
 
-runes@0.4.0:
+runes@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/runes/-/runes-0.4.0.tgz#791e605ac73c0c8eff17d631e12c8d8137f35b8a"
 

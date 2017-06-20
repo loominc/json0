@@ -88,6 +88,7 @@ genTests = (type) ->
         assert.deepEqual 'abc', type.apply 'a', [{p:[], t:'text0', o:[{p:1, i:'bc'}]}]
         assert.deepEqual 'bc', type.apply 'abc', [{p:[], t:'text0', o:[{p:0, d:'a'}]}]
         assert.deepEqual {x:'abc'}, type.apply {x:'a'}, [{p:['x'], t:'text0', o:[{p:1, i:'bc'}]}]
+        assert.deepEqual {x:'😀'}, type.apply {x:'😀 '}, [{p:['x'], t:'text0', o:[{p:1, d:' '}]}]
 
     describe '#transform()', ->
       it 'splits deletes', ->

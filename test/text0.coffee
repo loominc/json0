@@ -112,9 +112,7 @@ describe 'text0', ->
       t [{d:'abc', p:10}, {d:'xyz', p:6}]
       t [{d:'abc', p:10}, {d:'xyz', p:11}]
 
-
   describe 'randomizer', -> it 'passes', ->
     @timeout 4000
     @slow 4000
-    fuzzer text0, require('./text0-generator')
-
+    fuzzer text0, require('./text0-generator'), 1000
